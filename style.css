@@ -1,25 +1,38 @@
-#container{ 
-	width: 80%;
-	align-self: center;
-	margin: auto;
+*{
 	
+	margin: 0;
+	padding: 0;
 }
 
-.header, .nav, .content, .aside {
-	border-style: solid;
-	border-width: 1px;
+body{
+	background-color: whitesmoke;
+	font-family: arial, helvetica, sans-serif;
+}
+
+#container{ 
+	width: 80%;
+	margin: 0 auto;
+	border: 1px solid black;
 }
 
 .header {
-	background: red;
+	background-color: red;
+	height: 80px;
+	width: calc(100% - 20px);
 	text-align: center;
-	padding: 30px;
-	border-bottom-style: dashed;
-	border-bottom-width: 3px;
+	line-height: 80px;
+	color: white;
+	padding: 0 10px;
+	border-bottom: 3px dashed black;
 }
 
-.header h1{
-	color: white;
+.nav {
+	overflow: hidden;
+	background: lightblue;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	border-top-style: none;
 }
 
 ul {
@@ -36,28 +49,33 @@ li {
 	width: 80%;
 }
 
-.nav {
-	background: lightblue;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	padding-left: 10px;
-	border-top-style: none;
-}
-
 .aside{
 	background: orange;
 	float: left;
-	width: 30%;
+	width: calc(30% - 25px);
+	
 	padding: 10px;
-	min-height: 500px
+	min-height: 500px;
+	border: 1px solid black;
+}
+
+.aside input[type="text"]{
+	width: 100%;
+}
+
+.clearfix{
+	clear: both;
 }
 
 .content{
 	float: left;
-	width: 65%;
+	width: 70%;
+	/*width: calc(70% - 40px)
+	padding: 0 20px 0 20px*/
 	background: green;
 	min-height: 500px;
 	padding-top: 20px;
+	border: 1px solid black;
 }
 
 .footer{
@@ -65,7 +83,7 @@ li {
 	  position: fixed;
 	  bottom: 0;
 	  height: 40px;
-	  width: 75%;
+	  width: 77%;
 	  background-color: black;
 	  color: white;
 	  text-align: center;
@@ -74,11 +92,11 @@ li {
 
 .article {
 	color: white;
-	border-bottom-style: solid;
-	border-bottom-width: 1px;
-	line-height: 1px;
+	border-bottom: 1px solid white;
+	line-height: 20px;
 	margin-left: 20px;
 	margin-right: 20px;
+	padding: 15px 0 15px 0;
 }
 
 .article:first-child{
@@ -88,12 +106,7 @@ li {
 }
 
 
-*{
-	font-family: arial;
-	
-}
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 992px) {
 	/* For mobile phones: */
 	#container{
 		width: 100%;
@@ -104,22 +117,24 @@ li {
 
 	.header {
 		background: blue;
+		font-size: 70%;
 	}
 
 	.content{
-		width: 45%;
+		width: 50%;
 	}
 
 	.aside{
-		width: 45%;
+		width: calc(50% - 25px);
 	}
 
 	.footer
 	{
-		position: fixed;
-		bottom: 0;
-		height: 40px;
-		width: 80%;
+		background-color: black;
+		color: white;
+		text-align: center;
+		height: 50px;
+		line-height: 50px;
 
 	}
 
@@ -127,9 +142,39 @@ li {
 		color: white;
 		border-bottom-style: solid;
 		border-bottom-width: 1px;
-		line-height: 17px;
+		line-height: 19px;
 		margin-left: 20px;
 		margin-right: 20px;
 	}
 }
 
+@media only screen and (max-width: 768px) {
+	/* For mobile phones: */
+	#container{
+		width: calc(100% - 2px);
+		
+	}
+
+	.header {
+		background: purple;
+		font-size: 70%;
+	}
+
+	.content{
+		width: 100%;
+	}
+
+	.aside{
+		width: calc(100% - 2px);
+	}
+
+
+	.article {
+		color: white;
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		line-height: 19px;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+}
