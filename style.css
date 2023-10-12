@@ -77,17 +77,20 @@ li {
 	padding-top: 20px;
 	border: 1px solid black;
 }
+.header h1 {
+	white-space: nowrap;
+	overflow:hidden;
+	text-overflow: ellipsis;
+}
 
-.footer{
+.footer
+{
+	background-color: black;
+	color: white;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
 
-	  position: fixed;
-	  bottom: 0;
-	  height: 40px;
-	  width: 77%;
-	  background-color: black;
-	  color: white;
-	  text-align: center;
-	  margin: auto;
 }
 
 .article {
@@ -106,7 +109,7 @@ li {
 }
 
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 576px) {
 	/* For mobile phones: */
 	#container{
 		width: 100%;
@@ -130,14 +133,11 @@ li {
 
 	.footer
 	{
-		position: fixed;
-		bottom: 0;
-		height: 40px;
-		width: 95%;
 		background-color: black;
 		color: white;
 		text-align: center;
-		margin: auto;
+		height: 50px;
+		line-height: 50px;
 
 	}
 
@@ -149,9 +149,15 @@ li {
 		margin-left: 20px;
 		margin-right: 20px;
 	}
+
+	.header h1 {
+		white-space: nowrap;
+		overflow:hidden;
+		text-overflow: ellipsis;
+	}
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 400px) {
 	/* For mobile phones: */
 	#container{
 		width: calc(100% - 2px);
@@ -176,7 +182,15 @@ li {
 		width: calc(100% - 2px);
 	}
 
+	.footer
+	{
+		background-color: black;
+		color: white;
+		text-align: center;
+		height: 50px;
+		line-height: 50px;
 
+	}
 
 	.article {
 		color: white;
