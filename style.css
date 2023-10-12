@@ -1,3 +1,13 @@
+@media only screen and (max-width: 768px) {
+	/* For mobile phones: */
+	#container{
+		width: 100%;
+		align-self: center;
+		margin: auto;
+		
+	}
+  }
+
 #container{
 	width: 80%;
 	align-self: center;
