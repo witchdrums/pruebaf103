@@ -65,7 +65,7 @@ li {
 	  position: fixed;
 	  bottom: 0;
 	  height: 40px;
-	  width: 80%;
+	  width: 75%;
 	  background-color: black;
 	  color: white;
 	  text-align: center;
@@ -104,6 +104,32 @@ li {
 
 	.header {
 		background: blue;
+	}
+
+	.content{
+		width: 45%;
+	}
+
+	.aside{
+		width: 45%;
+	}
+
+	.footer
+	{
+		position: fixed;
+		bottom: 0;
+		height: 40px;
+		width: 80%;
+
+	}
+
+	.article {
+		color: white;
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		line-height: 17px;
+		margin-left: 20px;
+		margin-right: 20px;
 	}
 }
 
