@@ -130,11 +130,14 @@ li {
 
 	.footer
 	{
+		position: fixed;
+		bottom: 0;
+		height: 40px;
+		width: 95%;
 		background-color: black;
 		color: white;
 		text-align: center;
-		height: 50px;
-		line-height: 50px;
+		margin: auto;
 
 	}
 
@@ -148,7 +151,7 @@ li {
 	}
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 576px) {
 	/* For mobile phones: */
 	#container{
 		width: calc(100% - 2px);
@@ -159,6 +162,11 @@ li {
 		background: purple;
 		font-size: 70%;
 	}
+	.header h1 {
+		white-space: nowrap;
+		overflow:hidden;
+		text-overflow: ellipsis;
+	}
 
 	.content{
 		width: 100%;
@@ -167,6 +175,7 @@ li {
 	.aside{
 		width: calc(100% - 2px);
 	}
+
 
 
 	.article {
