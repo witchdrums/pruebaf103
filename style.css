@@ -2,6 +2,7 @@
 	width: 80%;
 	align-self: center;
 	margin: auto;
+	
 }
 
 .header, .nav, .content, .aside {
@@ -42,8 +43,9 @@ li {
 .aside{
 	background: orange;
 	float: left;
-	width: 29.3%;
-	min-height: 500px;
+	width: 25%;
+	padding: 10px;
+	min-height: 500px
 }
 
 .content{
