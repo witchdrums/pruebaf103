@@ -1,3 +1,9 @@
+#container{
+	width: 80%;
+	align-self: center;
+	margin: auto;
+}
+
 .header, .nav, .content, .aside {
 	border-style: solid;
 	border-width: 1px;
@@ -51,13 +57,13 @@ li {
 .footer{
 
 	  position: fixed;
-	  left: 0;
 	  bottom: 0;
 	  height: 40px;
-	  width: 100%;
+	  width: 80%;
 	  background-color: black;
 	  color: white;
 	  text-align: center;
+	  margin: auto;
 }
 
 .article {
