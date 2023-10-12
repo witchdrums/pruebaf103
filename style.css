@@ -32,6 +32,10 @@ li {
   display: inline;
 }
 
+#busqueda{
+	width: 80%;
+}
+
 .nav {
 	background: lightblue;
 	padding-top: 20px;
